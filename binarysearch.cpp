@@ -21,7 +21,7 @@ int binarysearch(int arr[],int size,int element){
 int main(){
     int arr[]={22,33,44,54,67,78,99};
     int size=sizeof(arr)/sizeof(int);
-    int element=998;
+    int element=22;
     int searchindex=binarysearch(arr,size,element);
     printf("The element %d was fond at index %d \n",element,searchindex);
     return 0;

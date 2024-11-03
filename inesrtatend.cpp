@@ -31,19 +31,19 @@ struct Node * insertatend(struct Node * head, int data){
 }
 
 int main(){
-  struct Node*head;
-  struct Node*second;
-  struct Node*third;
-  struct Node*fourth;
-  struct Node*fifth;
-  struct Node*sixth;
+  struct Node*head= (struct Node* ) malloc(sizeof(struct Node));
+  struct Node*second= (struct Node* ) malloc(sizeof(struct Node));
+  struct Node*third= (struct Node* ) malloc(sizeof(struct Node));
+  struct Node*fourth=(struct Node* ) malloc(sizeof(struct Node));
+  struct Node*fifth=(struct Node* ) malloc(sizeof(struct Node));
+ 
 
 
-  head = (struct Node* ) malloc(sizeof(struct Node));
-  second = (struct Node* ) malloc(sizeof(struct Node));
-  third= (struct Node* ) malloc(sizeof(struct Node));
-  fourth= (struct Node* ) malloc(sizeof(struct Node));
-  fifth = (struct Node* ) malloc(sizeof(struct Node));
+//   head = (struct Node* ) malloc(sizeof(struct Node));
+//   second = (struct Node* ) malloc(sizeof(struct Node));
+//   third= (struct Node* ) malloc(sizeof(struct Node));
+//   fourth= (struct Node* ) malloc(sizeof(struct Node));
+//   fifth = (struct Node* ) malloc(sizeof(struct Node));
     
 
   head ->data=12;
