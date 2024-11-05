@@ -46,6 +46,15 @@ struct Node* insertatindex(struct Node*head,int data, int index){
     return head;
 }
 
+struct Node*insertafter(struct Node*head,struct Node*prev, int data){
+    struct Node*ptr=(struct Node*)malloc(sizeof(struct Node));
+    ptr->data=data;
+    ptr->next=prev->next;
+    prev->next=ptr;
+
+    return head;
+}
+
 int main(){
     struct Node*head=(struct Node*)malloc(sizeof(struct Node));
     struct Node*one=(struct Node*)malloc(sizeof(struct Node));
@@ -67,5 +76,9 @@ int main(){
     printf("before index to insert data for linked list\n");
     head=insertatindex(head,2000,2);
     showdata(head);
+    head=insertafter(head,one,3999);
+    showdata(head);
     return 0;
 }
+
+

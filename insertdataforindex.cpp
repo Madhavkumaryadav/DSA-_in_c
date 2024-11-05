@@ -32,6 +32,7 @@ struct Node * insertatindex(struct Node*head,int data, int index){
     return head;
 }
 
+
 int main(){
   struct Node*head;
   struct Node*second;
