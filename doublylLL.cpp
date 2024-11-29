@@ -12,10 +12,14 @@ void showdata(struct Node*ptr){
         ptr=ptr->next;
     }
 }
-struct Node*reverse(struct Node*n4){
+struct Node*reverse(struct Node*n4,struct Node*n1){
     struct Node*ptr=(struct Node*)malloc(sizeof(struct Node));
     ptr=n4->prev;
-    return ptr;
+    ptr->next=n1;
+    return n1;
+}
+struct Node*inserthead(struct Node*n1j){
+    struct Node*p=(struct Node*)malloc(sizeof(struct Node))
 }
 
 int main(){
@@ -38,7 +42,7 @@ int main(){
     n4->next=NULL;
     
     showdata(n1);
-    n1=reverse(n4);
+    n1=reverse(n1,n4);
     showdata(n1);
     return 0;
 }
